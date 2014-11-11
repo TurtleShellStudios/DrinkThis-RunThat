@@ -476,6 +476,7 @@
 				4C36E8D21A07F24E00CE6C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C36E8D31A07F24E00CE6C2B /* Build configuration list for PBXNativeTarget "Drink This, Run ThatTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				4C36E8D51A07F24E00CE6C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
