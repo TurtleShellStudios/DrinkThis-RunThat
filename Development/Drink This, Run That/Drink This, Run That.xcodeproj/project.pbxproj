@@ -26,6 +26,8 @@
 		4C36E8EA1A07F33100CE6C2B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C36E8E91A07F33100CE6C2B /* Security.framework */; };
 		4C36E8EC1A07F33900CE6C2B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C36E8EB1A07F33900CE6C2B /* StoreKit.framework */; };
 		4C36E8EE1A07F34200CE6C2B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C36E8ED1A07F34200CE6C2B /* SystemConfiguration.framework */; };
+		4C4CC23E1A16C64B00B97B1F /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CC23D1A16C64B00B97B1F /* UserLoginViewController.m */; };
+		4C4CC2411A16CF2E00B97B1F /* SignUpUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CC2401A16CF2E00B97B1F /* SignUpUserViewController.m */; };
 		4C9B2A251A15050C0011CE79 /* DrinkSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2A241A15050C0011CE79 /* DrinkSelectViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,10 @@
 		4C36E8E91A07F33100CE6C2B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4C36E8EB1A07F33900CE6C2B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4C36E8ED1A07F34200CE6C2B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4C4CC23C1A16C64B00B97B1F /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
+		4C4CC23D1A16C64B00B97B1F /* UserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginViewController.m; sourceTree = "<group>"; };
+		4C4CC23F1A16CF2E00B97B1F /* SignUpUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpUserViewController.h; sourceTree = "<group>"; };
+		4C4CC2401A16CF2E00B97B1F /* SignUpUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpUserViewController.m; sourceTree = "<group>"; };
 		4C9B2A231A15050C0011CE79 /* DrinkSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkSelectViewController.h; sourceTree = "<group>"; };
 		4C9B2A241A15050C0011CE79 /* DrinkSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkSelectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +132,10 @@
 				4C36E8B71A07F24E00CE6C2B /* ViewController.h */,
 				4C36E8B81A07F24E00CE6C2B /* ViewController.m */,
 				4C36E8BA1A07F24E00CE6C2B /* Main.storyboard */,
+				4C4CC23F1A16CF2E00B97B1F /* SignUpUserViewController.h */,
+				4C4CC2401A16CF2E00B97B1F /* SignUpUserViewController.m */,
+				4C4CC23C1A16C64B00B97B1F /* UserLoginViewController.h */,
+				4C4CC23D1A16C64B00B97B1F /* UserLoginViewController.m */,
 				4C9B2A231A15050C0011CE79 /* DrinkSelectViewController.h */,
 				4C9B2A241A15050C0011CE79 /* DrinkSelectViewController.m */,
 				4C36E8BD1A07F24E00CE6C2B /* Images.xcassets */,
@@ -281,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C36E8B91A07F24E00CE6C2B /* ViewController.m in Sources */,
+				4C4CC2411A16CF2E00B97B1F /* SignUpUserViewController.m in Sources */,
+				4C4CC23E1A16C64B00B97B1F /* UserLoginViewController.m in Sources */,
 				4C9B2A251A15050C0011CE79 /* DrinkSelectViewController.m in Sources */,
 				4C36E8B61A07F24E00CE6C2B /* AppDelegate.m in Sources */,
 				4C36E8B31A07F24E00CE6C2B /* main.m in Sources */,

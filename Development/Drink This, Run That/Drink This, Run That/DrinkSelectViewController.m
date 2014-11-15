@@ -45,7 +45,7 @@
 	}
 	cell.textLabel.text = object[@"title"];
 	//can't figure out why this isn't working...
-	//cell.detailTextLabel.text = object[@"calories"];
+	cell.detailTextLabel.text = [@"Calories: " stringByAppendingString:[NSString stringWithFormat:@"%@", object[@"calories"]]];
 	return cell;
 }
 
