@@ -9,5 +9,5 @@
 #import <Parse/Parse.h>
 
 @interface DrinkSelectViewController : PFQueryTableViewController
-
+- (IBAction)calculateMiles:(id)sender;
 @end
