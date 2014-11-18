@@ -7,9 +7,10 @@
 //
 
 #import "DrinkSelectViewController.h"
+#import "RunOrAddCaloriesController.h"
 
 @interface DrinkSelectViewController ()
-
+@property (strong, nonatomic) NSMutableArray *drinks;
 @end
 
 @implementation DrinkSelectViewController
@@ -20,6 +21,7 @@
 	self.pullToRefreshEnabled = NO;
 	self.paginationEnabled = YES;
 	self.objectsPerPage = 20;
+	self.drinks = [[NSMutableArray alloc] init];
 	[super viewDidLoad];
 }
 
@@ -51,9 +53,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+	[cell setAccessoryType:UITableViewCellAccessoryCheckmark];
 	PFObject *object = [self objectAtIndexPath:indexPath];
-	
-	
+	[self.drinks addObject:object];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,14 +64,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+- (IBAction)calculateMiles:(id)sender
+{
+	[self performSegueWithIdentifier:@"calcSegue" sender:self];
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+	RunOrAddCaloriesController *controller = [segue destinationViewController];
+	controller.drinks = self.drinks;
 }
-*/
 
 @end

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="snT-fi-foJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="snT-fi-foJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Main Table View Controller-->
         <scene sceneID="bkO-hs-1pj">
             <objects>
-                <tableViewController id="lw5-zT-jyK" sceneMemberID="viewController">
+                <tableViewController id="lw5-zT-jyK" customClass="MainTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="22" sectionFooterHeight="22" id="lFr-bq-THd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,13 +177,16 @@
                             <outlet property="delegate" destination="klS-GS-oLE" id="P82-5e-68s"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="HBx-rb-dZa">
                         <barButtonItem key="rightBarButtonItem" title="Calculate Miles" id="fQV-Lh-UW4">
                             <connections>
-                                <segue destination="eXi-2U-Lgt" kind="push" id="Dro-eu-Urn"/>
+                                <action selector="calculateMiles:" destination="klS-GS-oLE" id="vJ0-lh-X9H"/>
+                                <segue destination="eXi-2U-Lgt" kind="push" identifier="calcSegue" id="Dro-eu-Urn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJy-Sh-xmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,7 +226,7 @@
         <!--Item-->
         <scene sceneID="ZlH-VS-OTI">
             <objects>
-                <tableViewController id="0hl-yV-GF5" sceneMemberID="viewController">
+                <tableViewController id="0hl-yV-GF5" customClass="RunOrAddCaloriesController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bp3-Qu-eIj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +264,9 @@
                                                     <state key="normal" title="Add to Total Calories">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="addCaloriesPressed:" destination="0hl-yV-GF5" eventType="touchUpInside" id="zem-OW-ZPJ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -296,6 +302,9 @@
                                                     <state key="normal" title="Run it Off!">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="runButtonPressed:" destination="0hl-yV-GF5" eventType="touchUpInside" id="aoP-x4-wk1"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or run off the miles now..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-ql-74c">
                                                     <rect key="frame" x="61" y="49" width="198" height="21"/>
@@ -330,6 +339,11 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="uj6-ug-sfl"/>
                     <navigationItem key="navigationItem" id="nqp-v3-lMg"/>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="YEe-fr-pdP" id="PBv-GS-QBk"/>
+                        <outlet property="milesToAddLabel" destination="t3r-f6-X69" id="U7G-3O-ieV"/>
+                        <outlet property="milesToRunLabel" destination="4Ni-a3-lBu" id="gu3-80-cUW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfK-S9-Ms1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -359,10 +373,10 @@
             </objects>
             <point key="canvasLocation" x="2913" y="875"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Calculated Controller-->
         <scene sceneID="F70-TM-qLf">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eXi-2U-Lgt" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eXi-2U-Lgt" customClass="CalculatedController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Zuz-5I-mey"/>
                     <nil key="simulatedBottomBarMetrics"/>
