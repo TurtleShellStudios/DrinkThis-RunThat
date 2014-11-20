@@ -10,4 +10,5 @@
 
 @interface DrinkSelectViewController : PFQueryTableViewController
 - (IBAction)calculateMiles:(id)sender;
+@property (strong, nonatomic) NSMutableArray *cells;
 @end

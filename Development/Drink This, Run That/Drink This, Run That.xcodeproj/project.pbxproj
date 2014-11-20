@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C1D6DDE1A1AFA8F00D7ACAE /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6DDD1A1AFA8F00D7ACAE /* MainTableViewController.m */; };
+		4C2C07E21A1E6AE300407328 /* DrinkDetailsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C07E11A1E6AE300407328 /* DrinkDetailsTableController.m */; };
 		4C36E8B31A07F24E00CE6C2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E8B21A07F24E00CE6C2B /* main.m */; };
 		4C36E8B61A07F24E00CE6C2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E8B51A07F24E00CE6C2B /* AppDelegate.m */; };
 		4C36E8B91A07F24E00CE6C2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E8B81A07F24E00CE6C2B /* ViewController.m */; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		4C1D6DDC1A1AFA8F00D7ACAE /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		4C1D6DDD1A1AFA8F00D7ACAE /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		4C2C07E01A1E6AE300407328 /* DrinkDetailsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkDetailsTableController.h; sourceTree = "<group>"; };
+		4C2C07E11A1E6AE300407328 /* DrinkDetailsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkDetailsTableController.m; sourceTree = "<group>"; };
 		4C36E8AD1A07F24E00CE6C2B /* Drink This, Run That.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink This, Run That.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C36E8B11A07F24E00CE6C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C36E8B21A07F24E00CE6C2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				4C36E8B71A07F24E00CE6C2B /* ViewController.h */,
 				4C36E8B81A07F24E00CE6C2B /* ViewController.m */,
 				4C36E8BA1A07F24E00CE6C2B /* Main.storyboard */,
+				4C2C07E01A1E6AE300407328 /* DrinkDetailsTableController.h */,
+				4C2C07E11A1E6AE300407328 /* DrinkDetailsTableController.m */,
 				4C1D6DDC1A1AFA8F00D7ACAE /* MainTableViewController.h */,
 				4C1D6DDD1A1AFA8F00D7ACAE /* MainTableViewController.m */,
 				4CFC46991A1AE27400748EF3 /* RunOrAddCaloriesController.h */,
@@ -313,6 +318,7 @@
 				4C4CC2411A16CF2E00B97B1F /* SignUpUserViewController.m in Sources */,
 				4C4CC23E1A16C64B00B97B1F /* UserLoginViewController.m in Sources */,
 				4C9B2A251A15050C0011CE79 /* DrinkSelectViewController.m in Sources */,
+				4C2C07E21A1E6AE300407328 /* DrinkDetailsTableController.m in Sources */,
 				4CFC469B1A1AE27400748EF3 /* RunOrAddCaloriesController.m in Sources */,
 				4CFC46981A1AE08F00748EF3 /* CalculatedController.m in Sources */,
 				4C36E8B61A07F24E00CE6C2B /* AppDelegate.m in Sources */,

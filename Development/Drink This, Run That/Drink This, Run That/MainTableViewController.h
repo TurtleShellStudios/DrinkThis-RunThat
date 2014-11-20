@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface MainTableViewController : UITableViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *caloriesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *milesLabel;
 @end
