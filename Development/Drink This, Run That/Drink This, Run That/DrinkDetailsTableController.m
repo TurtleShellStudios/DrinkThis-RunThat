@@ -10,4 +10,28 @@
 
 @implementation DrinkDetailsTableController
 
+-(void)viewDidLoad
+{
+	[super viewDidLoad];
+	self.navigationController.navigationBar.translucent = NO;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+	cell.textLabel.text = self.drinks[indexPath.row][@"title"];
+	cell.detailTextLabel.text = [@"Calories: " stringByAppendingString:[self.drinks[indexPath.row][@"calories"] stringValue]];
+	return cell;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return self.drinks.count;
+}
+
 @end

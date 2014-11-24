@@ -8,6 +8,6 @@
 
 #import <Parse/Parse.h>
 
-@interface DrinkDetailsTableController : PFQueryTableViewController
-
+@interface DrinkDetailsTableController : UITableViewController
+@property (strong,nonatomic) NSMutableArray *drinks;
 @end
