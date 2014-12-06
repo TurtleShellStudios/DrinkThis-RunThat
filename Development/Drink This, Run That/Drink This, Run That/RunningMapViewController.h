@@ -11,6 +11,7 @@
 #import <MapKit/MapKit.h>
 
 @interface RunningMapViewController : UIViewController <CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *runButton;
 @property (weak, nonatomic) IBOutlet MKMapView *MapView;
 @property (nonatomic, strong) CLLocationManager* locationManager;
 - (IBAction)startStopRun:(id)sender;

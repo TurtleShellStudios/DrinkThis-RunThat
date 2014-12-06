@@ -412,6 +412,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="MapView" destination="5am-OL-wCH" id="2Q6-wV-G2j"/>
+                        <outlet property="runButton" destination="mpQ-gE-C18" id="pz1-0p-CFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJL-EI-GoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
