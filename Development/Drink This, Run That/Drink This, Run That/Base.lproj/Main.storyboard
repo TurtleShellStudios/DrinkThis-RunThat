@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="snT-fi-foJ">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -242,7 +241,7 @@
             </objects>
             <point key="canvasLocation" x="4394" y="605"/>
         </scene>
-        <!--Item-->
+        <!--Overview-->
         <scene sceneID="ZlH-VS-OTI">
             <objects>
                 <tableViewController id="0hl-yV-GF5" customClass="RunOrAddCaloriesController" sceneMemberID="viewController">
@@ -356,7 +355,7 @@
                             <outlet property="delegate" destination="0hl-yV-GF5" id="5ec-eL-hXP"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="uj6-ug-sfl"/>
+                    <tabBarItem key="tabBarItem" title="Overview" id="uj6-ug-sfl"/>
                     <navigationItem key="navigationItem" id="nqp-v3-lMg"/>
                     <connections>
                         <outlet property="caloriesLabel" destination="YEe-fr-pdP" id="PBv-GS-QBk"/>
@@ -368,10 +367,10 @@
             </objects>
             <point key="canvasLocation" x="4401" y="-76"/>
         </scene>
-        <!--View Controller-->
+        <!--Running Map View Controller-->
         <scene sceneID="ac5-qK-VFe">
             <objects>
-                <viewController id="gLI-kz-aM0" sceneMemberID="viewController">
+                <viewController id="gLI-kz-aM0" customClass="RunningMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wHi-wi-MKQ"/>
                         <viewControllerLayoutGuide type="bottom" id="RmU-Pe-Ffu"/>
@@ -380,13 +379,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5am-OL-wCH">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5am-OL-wCH">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-nT-yZZ">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="lv3-ld-Sbe">
+                                        <nil key="title"/>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mpQ-gE-C18">
+                                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Start Running">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="startStopRun:" destination="gLI-kz-aM0" eventType="touchUpInside" id="TZr-FI-dYt"/>
+                                            </connections>
+                                        </button>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="r17-yu-3WO"/>
+                    <navigationItem key="navigationItem" id="r17-yu-3WO">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="qVm-9b-stG">
+                            <connections>
+                                <action selector="doneButton:" destination="gLI-kz-aM0" id="Fmg-c0-iXv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MapView" destination="5am-OL-wCH" id="2Q6-wV-G2j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJL-EI-GoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
