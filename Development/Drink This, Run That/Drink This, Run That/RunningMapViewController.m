@@ -7,9 +7,10 @@
 //
 
 #import "RunningMapViewController.h"
+#import "FinishedRunViewController.h"
 
 @interface RunningMapViewController ()
-@property (nonatomic) BOOL locationManagerIsUpdating;
+@property (nonatomic) BOOL shouldRecordDistance;
 @property (nonatomic) double distanceTraveled;
 @property (nonatomic, strong) CLLocation* oldLocation;
 @end
@@ -22,38 +23,38 @@
 	self.locationManager = [[CLLocationManager alloc] init];
 	[self.locationManager requestWhenInUseAuthorization];
 	self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-	self.locationManager.distanceFilter = 5.0f;
+	self.locationManager.distanceFilter = kCLDistanceFilterNone;
 	self.locationManager.delegate = self;
-	self.locationManager.headingFilter = 5.0;
-	self.locationManagerIsUpdating = NO;
+	self.shouldRecordDistance = NO;
 	self.MapView.showsUserLocation = YES;
 	self.distanceTraveled = 0.0;
+	self.doneButton.enabled = NO;
+	[self.locationManager startUpdatingLocation];
 }
 
 #pragma mark Custom IBAction Methods
 
 - (IBAction)startStopRun:(id)sender
 {
-	if(!self.locationManagerIsUpdating)
+	self.doneButton.enabled = YES;
+	if(!self.shouldRecordDistance)
 	{
 		[self.locationManager startUpdatingLocation];
-		[self.locationManager startUpdatingHeading];
 		[self.runButton setTitle:@"Stop Running" forState:UIControlStateNormal];
-		self.locationManagerIsUpdating = YES;
+		self.shouldRecordDistance = YES;
 		
 	}
 	else
 	{
-		[self.locationManager stopUpdatingHeading];
 		[self.locationManager stopUpdatingLocation];
 		[self.runButton setTitle:@"Start Running" forState:UIControlStateNormal];
-		self.locationManagerIsUpdating = NO;
+		self.shouldRecordDistance = NO;
 	}
 }
 
 - (IBAction)doneButton:(id)sender
 {
-	
+	[self performSegueWithIdentifier:@"doneRunningSegue" sender:self];
 }
 
 #pragma mark CLLocation Delegate Methods
@@ -61,7 +62,7 @@
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
 	CLLocation* location = [locations lastObject];
-	if(!self.oldLocation)
+	if(!self.shouldRecordDistance)
 	{
 		self.oldLocation = location;
 		printf("New Distance Traveled = %f\n",self.distanceTraveled);
@@ -90,6 +91,13 @@
 -(void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager
 {
 	
+}
+
+#pragma mark Segue method
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	FinishedRunViewController* controller = [segue destinationViewController];
+	controller.metersRan = self.distanceTraveled;
 }
 
 @end

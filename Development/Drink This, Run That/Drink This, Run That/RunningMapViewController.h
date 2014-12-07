@@ -16,4 +16,5 @@
 @property (nonatomic, strong) CLLocationManager* locationManager;
 - (IBAction)startStopRun:(id)sender;
 - (IBAction)doneButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 @end

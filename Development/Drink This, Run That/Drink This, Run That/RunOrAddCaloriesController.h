@@ -14,7 +14,6 @@
 @property (strong,nonatomic) PFUser *user;
 @property (weak, nonatomic) IBOutlet UILabel *caloriesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *milesToAddLabel;
-@property (weak, nonatomic) IBOutlet UILabel *milesToRunLabel;
 - (IBAction)runButtonPressed:(id)sender;
 - (IBAction)addCaloriesPressed:(id)sender;
 @end

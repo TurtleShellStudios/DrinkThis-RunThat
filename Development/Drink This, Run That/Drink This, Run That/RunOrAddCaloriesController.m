@@ -33,13 +33,14 @@
 - (IBAction)addCaloriesPressed:(id)sender
 {
 	self.user = [PFUser currentUser];
-	self.user[@"caloriesRemaining"] = [NSNumber numberWithInt:[self.user[@"caloriesRemaining"] integerValue] + [self.calories integerValue]];
+	self.user[@"caloriesRemaining"] = [NSNumber numberWithDouble:[self.user[@"caloriesRemaining"] doubleValue] + [self.calories doubleValue]];
 	NSArray *viewControllers = [[self navigationController] viewControllers];
 	for(id viewController in viewControllers)
 	{
 		if([viewController isKindOfClass:[MainTableViewController class]])
 		{
-			[self.user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+			[self.user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+			{
 				if(error)
 				{
 					[[[UIAlertView alloc] initWithTitle:@"Something went wrong!" message:@"Something went wrong when trying to add these calories, please try again." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];

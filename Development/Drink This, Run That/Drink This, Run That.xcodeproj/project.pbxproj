@@ -32,6 +32,7 @@
 		4C4CC2411A16CF2E00B97B1F /* SignUpUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CC2401A16CF2E00B97B1F /* SignUpUserViewController.m */; };
 		4C9B2A251A15050C0011CE79 /* DrinkSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2A241A15050C0011CE79 /* DrinkSelectViewController.m */; };
 		4CDE87081A32A896006EB04D /* RunningMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE87071A32A896006EB04D /* RunningMapViewController.m */; };
+		4CDE870B1A33B161006EB04D /* FinishedRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE870A1A33B161006EB04D /* FinishedRunViewController.m */; };
 		4CFC46631A1AD76600748EF3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFC46621A1AD76600748EF3 /* MapKit.framework */; };
 		4CFC46981A1AE08F00748EF3 /* CalculatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC46971A1AE08F00748EF3 /* CalculatedController.m */; };
 		4CFC469B1A1AE27400748EF3 /* RunOrAddCaloriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC469A1A1AE27400748EF3 /* RunOrAddCaloriesController.m */; };
@@ -85,6 +86,8 @@
 		4C9B2A241A15050C0011CE79 /* DrinkSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkSelectViewController.m; sourceTree = "<group>"; };
 		4CDE87061A32A896006EB04D /* RunningMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningMapViewController.h; sourceTree = "<group>"; };
 		4CDE87071A32A896006EB04D /* RunningMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningMapViewController.m; sourceTree = "<group>"; };
+		4CDE87091A33B161006EB04D /* FinishedRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishedRunViewController.h; sourceTree = "<group>"; };
+		4CDE870A1A33B161006EB04D /* FinishedRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishedRunViewController.m; sourceTree = "<group>"; };
 		4CFC46621A1AD76600748EF3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4CFC46961A1AE08F00748EF3 /* CalculatedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatedController.h; sourceTree = "<group>"; };
 		4CFC46971A1AE08F00748EF3 /* CalculatedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatedController.m; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				4C36E8B71A07F24E00CE6C2B /* ViewController.h */,
 				4C36E8B81A07F24E00CE6C2B /* ViewController.m */,
 				4C36E8BA1A07F24E00CE6C2B /* Main.storyboard */,
+				4CDE87091A33B161006EB04D /* FinishedRunViewController.h */,
+				4CDE870A1A33B161006EB04D /* FinishedRunViewController.m */,
 				4CDE87061A32A896006EB04D /* RunningMapViewController.h */,
 				4CDE87071A32A896006EB04D /* RunningMapViewController.m */,
 				4C2C07E01A1E6AE300407328 /* DrinkDetailsTableController.h */,
@@ -324,6 +329,7 @@
 				4C4CC2411A16CF2E00B97B1F /* SignUpUserViewController.m in Sources */,
 				4C4CC23E1A16C64B00B97B1F /* UserLoginViewController.m in Sources */,
 				4C9B2A251A15050C0011CE79 /* DrinkSelectViewController.m in Sources */,
+				4CDE870B1A33B161006EB04D /* FinishedRunViewController.m in Sources */,
 				4CDE87081A32A896006EB04D /* RunningMapViewController.m in Sources */,
 				4C2C07E21A1E6AE300407328 /* DrinkDetailsTableController.m in Sources */,
 				4CFC469B1A1AE27400748EF3 /* RunOrAddCaloriesController.m in Sources */,

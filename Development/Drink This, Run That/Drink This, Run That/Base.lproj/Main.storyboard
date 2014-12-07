@@ -24,9 +24,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories By Mile: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-Zd-C50">
-                                                    <rect key="frame" x="51" y="49" width="218" height="21"/>
+                                                    <rect key="frame" x="8" y="49" width="304" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="218" id="xJK-MN-DlK"/>
+                                                        <constraint firstAttribute="width" constant="304" id="xJK-MN-DlK"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,10 +42,10 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Remaining:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofq-dd-aQL">
-                                                    <rect key="frame" x="51" y="20" width="218" height="21"/>
+                                                    <rect key="frame" x="8" y="20" width="304" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="Qug-y9-dXW"/>
-                                                        <constraint firstAttribute="width" constant="218" id="ksm-yD-m6x"/>
+                                                        <constraint firstAttribute="width" constant="304" id="ksm-yD-m6x"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -71,12 +71,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eYt-Rw-mu8">
-                                                    <rect key="frame" x="101" y="52" width="118" height="31"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="114" id="l5G-cl-GbM"/>
-                                                    </constraints>
-                                                </slider>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles to Run:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNC-Y2-PVN">
                                                     <rect key="frame" x="20" y="11" width="114" height="21"/>
                                                     <constraints>
@@ -96,7 +90,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJX-H5-Y6x">
-                                                    <rect key="frame" x="126" y="90" width="69" height="30"/>
+                                                    <rect key="frame" x="126" y="63" width="69" height="30"/>
                                                     <state key="normal" title="Run it Off!">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -106,12 +100,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="fJX-H5-Y6x" secondAttribute="centerY" constant="-28" id="17S-Oa-ACG"/>
+                                                <constraint firstAttribute="centerY" secondItem="fJX-H5-Y6x" secondAttribute="centerY" constant="-0.75" id="17S-Oa-ACG"/>
                                                 <constraint firstItem="4NJ-ec-80s" firstAttribute="top" secondItem="7k7-fJ-yI8" secondAttribute="top" constant="11" id="Val-77-mVe"/>
                                                 <constraint firstItem="dNC-Y2-PVN" firstAttribute="top" secondItem="7k7-fJ-yI8" secondAttribute="top" constant="11" id="iao-Xw-aqx"/>
                                                 <constraint firstAttribute="trailing" secondItem="4NJ-ec-80s" secondAttribute="trailing" constant="20" id="mb9-R6-xdE"/>
-                                                <constraint firstAttribute="centerY" secondItem="eYt-Rw-mu8" secondAttribute="centerY" constant="10" id="oi1-GZ-6f4"/>
-                                                <constraint firstAttribute="centerX" secondItem="eYt-Rw-mu8" secondAttribute="centerX" id="pDi-1g-ieB"/>
                                                 <constraint firstItem="dNC-Y2-PVN" firstAttribute="leading" secondItem="7k7-fJ-yI8" secondAttribute="leading" constant="20" id="rHZ-Sx-S1A"/>
                                                 <constraint firstAttribute="centerX" secondItem="fJX-H5-Y6x" secondAttribute="centerX" constant="-0.5" id="vMA-8f-JTE"/>
                                             </constraints>
@@ -306,15 +298,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles to Run: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ni-a3-lBu">
-                                                    <rect key="frame" x="61" y="20" width="198" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="198" id="iZb-xa-yjf"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-e2-eDG">
                                                     <rect key="frame" x="126" y="78" width="69" height="30"/>
                                                     <state key="normal" title="Run it Off!">
@@ -324,10 +307,10 @@
                                                         <action selector="runButtonPressed:" destination="0hl-yV-GF5" eventType="touchUpInside" id="aoP-x4-wk1"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or run off the miles now..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-ql-74c">
-                                                    <rect key="frame" x="61" y="49" width="198" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or run off the miles now!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-ql-74c">
+                                                    <rect key="frame" x="65" y="49" width="189" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="198" id="yv2-Ld-3he"/>
+                                                        <constraint firstAttribute="width" constant="189" id="yv2-Ld-3he"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -335,13 +318,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hVd-ql-74c" firstAttribute="top" secondItem="4Ni-a3-lBu" secondAttribute="bottom" constant="8" id="5LC-yI-6HA"/>
                                                 <constraint firstAttribute="centerX" secondItem="fPa-e2-eDG" secondAttribute="centerX" constant="-0.5" id="EZ1-Zz-MJw"/>
                                                 <constraint firstAttribute="centerX" secondItem="hVd-ql-74c" secondAttribute="centerX" id="Sxd-0F-nnp"/>
-                                                <constraint firstAttribute="centerY" secondItem="4Ni-a3-lBu" secondAttribute="centerY" constant="150" id="We9-15-nmR"/>
-                                                <constraint firstAttribute="centerX" secondItem="4Ni-a3-lBu" secondAttribute="centerX" id="XPV-7a-62x"/>
                                                 <constraint firstItem="fPa-e2-eDG" firstAttribute="top" secondItem="hVd-ql-74c" secondAttribute="bottom" constant="8" id="mP8-Rd-zL5"/>
-                                                <constraint firstItem="4Ni-a3-lBu" firstAttribute="top" secondItem="V5t-ue-ABb" secondAttribute="top" constant="20" id="q76-Ah-oEp"/>
                                                 <constraint firstAttribute="centerY" secondItem="fPa-e2-eDG" secondAttribute="centerY" constant="87.5" id="tJW-gy-oC3"/>
                                                 <constraint firstAttribute="centerY" secondItem="hVd-ql-74c" secondAttribute="centerY" constant="121" id="y2d-TK-ctb"/>
                                             </constraints>
@@ -360,7 +339,6 @@
                     <connections>
                         <outlet property="caloriesLabel" destination="YEe-fr-pdP" id="PBv-GS-QBk"/>
                         <outlet property="milesToAddLabel" destination="t3r-f6-X69" id="U7G-3O-ieV"/>
-                        <outlet property="milesToRunLabel" destination="4Ni-a3-lBu" id="gu3-80-cUW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfK-S9-Ms1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -407,17 +385,77 @@
                         <barButtonItem key="rightBarButtonItem" title="Done" id="qVm-9b-stG">
                             <connections>
                                 <action selector="doneButton:" destination="gLI-kz-aM0" id="Fmg-c0-iXv"/>
+                                <segue destination="wlx-DK-Kgd" kind="push" identifier="doneRunnningSegue" id="F7K-kV-LIi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="MapView" destination="5am-OL-wCH" id="2Q6-wV-G2j"/>
+                        <outlet property="doneButton" destination="qVm-9b-stG" id="pEx-r9-oZl"/>
                         <outlet property="runButton" destination="mpQ-gE-C18" id="pz1-0p-CFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJL-EI-GoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2913" y="875"/>
+        </scene>
+        <!--Finished Run View Controller-->
+        <scene sceneID="gRG-K6-fFY">
+            <objects>
+                <viewController id="wlx-DK-Kgd" customClass="FinishedRunViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hGe-Dg-DbD"/>
+                        <viewControllerLayoutGuide type="bottom" id="O6c-ok-iVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uju-C9-JFN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice Job on the Run! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB7-sf-bbP">
+                                <rect key="frame" x="16" y="72" width="288" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories Burned : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-Ob-jgE">
+                                <rect key="frame" x="16" y="289" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles Ran : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5v-EJ-VAn">
+                                <rect key="frame" x="16" y="260" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzB-tS-I4d">
+                                <rect key="frame" x="77" y="394" width="167" height="30"/>
+                                <state key="normal" title="Add Miles Ran">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMilesRan:" destination="wlx-DK-Kgd" eventType="touchUpInside" id="tTV-wY-WNR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iB7-sf-bbP" firstAttribute="trailing" secondItem="uju-C9-JFN" secondAttribute="trailingMargin" id="0SX-dM-Kch"/>
+                            <constraint firstItem="iB7-sf-bbP" firstAttribute="leading" secondItem="uju-C9-JFN" secondAttribute="leadingMargin" id="JSp-lv-Al6"/>
+                            <constraint firstItem="iB7-sf-bbP" firstAttribute="top" secondItem="hGe-Dg-DbD" secondAttribute="bottom" constant="8" symbolic="YES" id="Plb-gf-896"/>
+                            <constraint firstItem="O6c-ok-iVP" firstAttribute="top" secondItem="iB7-sf-bbP" secondAttribute="bottom" constant="386" id="yn4-v2-IJo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6zf-Lm-u5Z"/>
+                    <connections>
+                        <outlet property="caloriesBurnedLabel" destination="QVZ-Ob-jgE" id="ld9-4A-9mM"/>
+                        <outlet property="milesRanLabel" destination="b5v-EJ-VAn" id="tcH-ks-XNd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqc-fg-nbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="875"/>
         </scene>
         <!--Calculated Controller-->
         <scene sceneID="F70-TM-qLf">
