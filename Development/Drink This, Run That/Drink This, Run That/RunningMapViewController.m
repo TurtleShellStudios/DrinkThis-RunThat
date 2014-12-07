@@ -21,7 +21,7 @@
 {
 	[super viewDidLoad];
 	self.locationManager = [[CLLocationManager alloc] init];
-	[self.locationManager requestWhenInUseAuthorization];
+	[self.locationManager requestAlwaysAuthorization];
 	self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	self.locationManager.distanceFilter = kCLDistanceFilterNone;
 	self.locationManager.delegate = self;

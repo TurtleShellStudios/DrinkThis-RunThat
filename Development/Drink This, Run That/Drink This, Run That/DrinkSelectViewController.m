@@ -20,7 +20,7 @@
 	self.parseClassName = @"Drinks";
 	self.pullToRefreshEnabled = NO;
 	self.paginationEnabled = YES;
-	self.objectsPerPage = 20;
+	self.objectsPerPage = 50;
 	self.drinks = [[NSMutableArray alloc] init];
 	[super viewDidLoad];
 }
@@ -46,7 +46,6 @@
 		cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
 	}
 	cell.textLabel.text = object[@"title"];
-	//can't figure out why this isn't working...
 	cell.detailTextLabel.text = [@"Calories: " stringByAppendingString:[NSString stringWithFormat:@"%@", object[@"calories"]]];
 	return cell;
 }
