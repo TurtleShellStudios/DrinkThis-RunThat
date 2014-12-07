@@ -20,14 +20,10 @@
 	self.calories = @0;
 	for(PFObject *drink in self.drinks)
 	{
-		self.calories = [NSNumber numberWithInt:[self.calories integerValue] + [drink[@"calories"] integerValue]];
+		self.calories = [NSNumber numberWithLong:[self.calories longValue] + [drink[@"calories"] longValue]];
 	}
 	self.caloriesLabel.text = [NSString stringWithFormat:@"Calories Consumed: %@", self.calories];
 	self.milesToAddLabel.text = [NSString stringWithFormat:@"Miles to Add: %@", [NSNumber numberWithDouble:[self.calories doubleValue] / 100]];
-}
-
-- (IBAction)runButtonPressed:(id)sender
-{
 }
 
 - (IBAction)addCaloriesPressed:(id)sender
