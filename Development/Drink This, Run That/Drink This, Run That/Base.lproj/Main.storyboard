@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="snT-fi-foJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main Table View Controller-->
@@ -309,11 +310,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5am-OL-wCH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5am-OL-wCH">
+                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
                             </mapView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-nT-yZZ">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-nT-yZZ">
+                                <rect key="frame" x="0.0" y="516" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="lv3-ld-Sbe">
                                         <nil key="title"/>
@@ -332,6 +333,17 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5am-OL-wCH" firstAttribute="leading" secondItem="dio-6l-25i" secondAttribute="leadingMargin" constant="-16" id="AzS-gD-Btq"/>
+                            <constraint firstItem="5am-OL-wCH" firstAttribute="top" secondItem="dio-6l-25i" secondAttribute="topMargin" constant="49" id="DFe-we-Wmv"/>
+                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="width" secondItem="5am-OL-wCH" secondAttribute="width" id="Lfn-X4-h5C"/>
+                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="centerX" secondItem="5am-OL-wCH" secondAttribute="centerX" id="SLf-U6-swa"/>
+                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="centerY" secondItem="5am-OL-wCH" secondAttribute="centerY" constant="229.5" id="dEq-p6-rAX"/>
+                            <constraint firstItem="RmU-Pe-Ffu" firstAttribute="top" secondItem="5am-OL-wCH" secondAttribute="bottom" id="ert-vm-6AW"/>
+                            <constraint firstAttribute="centerY" secondItem="4vU-nT-yZZ" secondAttribute="centerY" constant="-254" id="kC0-lK-JA1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5am-OL-wCH" secondAttribute="trailing" constant="-16" id="qfR-oR-0Ti"/>
+                            <constraint firstAttribute="centerX" secondItem="4vU-nT-yZZ" secondAttribute="centerX" id="qkX-VQ-AxV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r17-yu-3WO">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="qVm-9b-stG">
