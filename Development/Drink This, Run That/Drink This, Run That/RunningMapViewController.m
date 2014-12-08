@@ -54,6 +54,7 @@
 
 - (IBAction)doneButton:(id)sender
 {
+	[self.locationManager stopUpdatingLocation];
 	[self performSegueWithIdentifier:@"doneRunningSegue" sender:self];
 }
 
