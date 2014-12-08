@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Main Table View Controller-->
+        <!--Drink This, Run That-->
         <scene sceneID="bkO-hs-1pj">
             <objects>
                 <tableViewController id="lw5-zT-jyK" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                             <outlet property="delegate" destination="lw5-zT-jyK" id="2hW-3n-mIT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7Ju-00-G0V"/>
+                    <navigationItem key="navigationItem" title="Drink This, Run That" id="7Ju-00-G0V"/>
                     <connections>
                         <outlet property="caloriesLabel" destination="Ofq-dd-aQL" id="7li-Hz-304"/>
                         <outlet property="milesLabel" destination="fcc-Zd-C50" id="ogd-s3-uKK"/>
@@ -135,7 +135,7 @@
             </objects>
             <point key="canvasLocation" x="2297" y="461"/>
         </scene>
-        <!--Drink Select View Controller-->
+        <!--Drinks-->
         <scene sceneID="hTg-Nl-j8Q">
             <objects>
                 <tableViewController id="klS-GS-oLE" customClass="DrinkSelectViewController" sceneMemberID="viewController">
@@ -174,8 +174,8 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="HBx-rb-dZa">
-                        <barButtonItem key="rightBarButtonItem" title="Calculate Miles" id="fQV-Lh-UW4">
+                    <navigationItem key="navigationItem" title="Drinks" id="HBx-rb-dZa">
+                        <barButtonItem key="rightBarButtonItem" title="Add Miles" id="fQV-Lh-UW4">
                             <connections>
                                 <action selector="calculateMiles:" destination="klS-GS-oLE" id="vJ0-lh-X9H"/>
                                 <segue destination="eXi-2U-Lgt" kind="push" identifier="calcSegue" id="Dro-eu-Urn"/>
@@ -227,7 +227,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Drink Details" id="H81-7l-30f"/>
-                    <navigationItem key="navigationItem" id="7vw-I4-1N8"/>
+                    <navigationItem key="navigationItem" title="Drink Details" id="7vw-I4-1N8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pt4-de-l7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -298,7 +298,7 @@
             </objects>
             <point key="canvasLocation" x="4394" y="-88"/>
         </scene>
-        <!--Running Map View Controller-->
+        <!--Running Map-->
         <scene sceneID="ac5-qK-VFe">
             <objects>
                 <viewController id="gLI-kz-aM0" customClass="RunningMapViewController" sceneMemberID="viewController">
@@ -344,7 +344,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="4vU-nT-yZZ" secondAttribute="trailing" constant="-16" id="xXA-G5-MRF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="r17-yu-3WO">
+                    <navigationItem key="navigationItem" title="Running Map" id="r17-yu-3WO">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="qVm-9b-stG">
                             <connections>
                                 <action selector="doneButton:" destination="gLI-kz-aM0" id="Fmg-c0-iXv"/>
@@ -362,7 +362,7 @@
             </objects>
             <point key="canvasLocation" x="2913" y="875"/>
         </scene>
-        <!--Finished Run View Controller-->
+        <!--Finished Run!-->
         <scene sceneID="gRG-K6-fFY">
             <objects>
                 <viewController id="wlx-DK-Kgd" customClass="FinishedRunViewController" sceneMemberID="viewController">
@@ -426,7 +426,7 @@
                             <constraint firstAttribute="centerY" secondItem="iB7-sf-bbP" secondAttribute="centerY" constant="101" id="mop-0R-qvi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6zf-Lm-u5Z"/>
+                    <navigationItem key="navigationItem" title="Finished Run!" id="6zf-Lm-u5Z"/>
                     <connections>
                         <outlet property="caloriesBurnedLabel" destination="QVZ-Ob-jgE" id="ld9-4A-9mM"/>
                         <outlet property="milesRanLabel" destination="b5v-EJ-VAn" id="tcH-ks-XNd"/>
@@ -436,12 +436,12 @@
             </objects>
             <point key="canvasLocation" x="3375" y="875"/>
         </scene>
-        <!--Calculated Controller-->
+        <!--Drink Overview-->
         <scene sceneID="F70-TM-qLf">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eXi-2U-Lgt" customClass="CalculatedController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Zuz-5I-mey"/>
+                    <navigationItem key="navigationItem" title="Drink Overview" id="Zuz-5I-mey"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ykc-kl-3jC">
                         <autoresizingMask key="autoresizingMask"/>
