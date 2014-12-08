@@ -392,8 +392,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice Job on the Run! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB7-sf-bbP">
+                                <rect key="frame" x="23" y="128" width="274" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzB-tS-I4d">
-                                <rect key="frame" x="77" y="394" width="167" height="30"/>
+                                <rect key="frame" x="77" y="341" width="167" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="oDH-Fp-POo"/>
                                 </constraints>
@@ -404,26 +410,20 @@
                                     <action selector="addMilesRan:" destination="wlx-DK-Kgd" eventType="touchUpInside" id="tTV-wY-WNR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice Job on the Run! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB7-sf-bbP">
-                                <rect key="frame" x="23" y="72" width="274" height="110"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="CzB-tS-I4d" secondAttribute="centerY" constant="-125" id="6yn-1J-pXx"/>
-                            <constraint firstAttribute="centerY" secondItem="QVZ-Ob-jgE" secondAttribute="centerY" constant="-15.5" id="NQv-Bg-mBp"/>
-                            <constraint firstAttribute="centerX" secondItem="QVZ-Ob-jgE" secondAttribute="centerX" id="PKk-Hl-raE"/>
-                            <constraint firstAttribute="centerX" secondItem="iB7-sf-bbP" secondAttribute="centerX" id="Rxn-HR-z7U"/>
-                            <constraint firstItem="b5v-EJ-VAn" firstAttribute="top" secondItem="iB7-sf-bbP" secondAttribute="bottom" constant="78" id="Zmc-Iy-PWj"/>
-                            <constraint firstItem="QVZ-Ob-jgE" firstAttribute="top" secondItem="b5v-EJ-VAn" secondAttribute="bottom" constant="8" id="dSd-Df-OP5"/>
-                            <constraint firstAttribute="centerX" secondItem="b5v-EJ-VAn" secondAttribute="centerX" id="fhR-Tx-3Se"/>
-                            <constraint firstAttribute="centerY" secondItem="iB7-sf-bbP" secondAttribute="centerY" constant="157" id="lHM-tU-x6n"/>
-                            <constraint firstAttribute="centerX" secondItem="CzB-tS-I4d" secondAttribute="centerX" constant="-0.5" id="lZT-6r-UnQ"/>
-                            <constraint firstItem="CzB-tS-I4d" firstAttribute="top" secondItem="QVZ-Ob-jgE" secondAttribute="bottom" constant="84" id="yoJ-4k-oVu"/>
-                            <constraint firstAttribute="centerY" secondItem="b5v-EJ-VAn" secondAttribute="centerY" constant="13.5" id="zwS-RD-h92"/>
+                            <constraint firstItem="b5v-EJ-VAn" firstAttribute="top" secondItem="iB7-sf-bbP" secondAttribute="bottom" constant="22" id="0oO-OM-1bY"/>
+                            <constraint firstItem="QVZ-Ob-jgE" firstAttribute="top" secondItem="b5v-EJ-VAn" secondAttribute="bottom" constant="8" id="5y2-CD-Uyz"/>
+                            <constraint firstAttribute="centerY" secondItem="QVZ-Ob-jgE" secondAttribute="centerY" constant="-15.5" id="CO9-E8-l3j"/>
+                            <constraint firstAttribute="centerX" secondItem="b5v-EJ-VAn" secondAttribute="centerX" id="DSa-Ih-AlA"/>
+                            <constraint firstAttribute="centerX" secondItem="iB7-sf-bbP" secondAttribute="centerX" id="Jc4-1k-GOm"/>
+                            <constraint firstAttribute="centerX" secondItem="CzB-tS-I4d" secondAttribute="centerX" constant="-0.5" id="VjQ-1S-tii"/>
+                            <constraint firstAttribute="centerY" secondItem="b5v-EJ-VAn" secondAttribute="centerY" constant="13.5" id="XNo-sS-dHR"/>
+                            <constraint firstAttribute="centerY" secondItem="CzB-tS-I4d" secondAttribute="centerY" constant="-72" id="YlK-Af-te0"/>
+                            <constraint firstItem="CzB-tS-I4d" firstAttribute="top" secondItem="QVZ-Ob-jgE" secondAttribute="bottom" constant="31" id="ejj-nf-6Ks"/>
+                            <constraint firstAttribute="centerX" secondItem="QVZ-Ob-jgE" secondAttribute="centerX" id="iw2-Wn-bd9"/>
+                            <constraint firstAttribute="centerY" secondItem="iB7-sf-bbP" secondAttribute="centerY" constant="101" id="mop-0R-qvi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6zf-Lm-u5Z"/>
