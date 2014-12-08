@@ -47,6 +47,9 @@
 	}
 	cell.textLabel.text = object[@"title"];
 	cell.detailTextLabel.text = [@"Calories: " stringByAppendingString:[NSString stringWithFormat:@"%@", object[@"calories"]]];
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+	[button setUserInteractionEnabled:NO];
+	cell.accessoryView = button;
 	return cell;
 }
 
