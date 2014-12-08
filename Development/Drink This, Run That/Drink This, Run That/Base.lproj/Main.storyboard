@@ -311,10 +311,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5am-OL-wCH">
-                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="25" width="320" height="499"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-nT-yZZ">
-                                <rect key="frame" x="0.0" y="516" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="lv3-ld-Sbe">
                                         <nil key="title"/>
@@ -334,15 +334,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5am-OL-wCH" firstAttribute="leading" secondItem="dio-6l-25i" secondAttribute="leadingMargin" constant="-16" id="AzS-gD-Btq"/>
-                            <constraint firstItem="5am-OL-wCH" firstAttribute="top" secondItem="dio-6l-25i" secondAttribute="topMargin" constant="49" id="DFe-we-Wmv"/>
-                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="width" secondItem="5am-OL-wCH" secondAttribute="width" id="Lfn-X4-h5C"/>
-                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="centerX" secondItem="5am-OL-wCH" secondAttribute="centerX" id="SLf-U6-swa"/>
-                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="centerY" secondItem="5am-OL-wCH" secondAttribute="centerY" constant="229.5" id="dEq-p6-rAX"/>
-                            <constraint firstItem="RmU-Pe-Ffu" firstAttribute="top" secondItem="5am-OL-wCH" secondAttribute="bottom" id="ert-vm-6AW"/>
-                            <constraint firstAttribute="centerY" secondItem="4vU-nT-yZZ" secondAttribute="centerY" constant="-254" id="kC0-lK-JA1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5am-OL-wCH" secondAttribute="trailing" constant="-16" id="qfR-oR-0Ti"/>
-                            <constraint firstAttribute="centerX" secondItem="4vU-nT-yZZ" secondAttribute="centerX" id="qkX-VQ-AxV"/>
+                            <constraint firstItem="RmU-Pe-Ffu" firstAttribute="top" secondItem="4vU-nT-yZZ" secondAttribute="bottom" id="Ejx-PR-ijv"/>
+                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="leading" secondItem="dio-6l-25i" secondAttribute="leadingMargin" constant="-16" id="QS8-hB-ImZ"/>
+                            <constraint firstItem="5am-OL-wCH" firstAttribute="top" secondItem="dio-6l-25i" secondAttribute="topMargin" constant="25" id="Xuf-dJ-kR1"/>
+                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="bottom" secondItem="5am-OL-wCH" secondAttribute="bottom" constant="44" id="Z4b-mH-RTV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5am-OL-wCH" secondAttribute="trailing" constant="-16" id="bjy-HP-YL5"/>
+                            <constraint firstItem="4vU-nT-yZZ" firstAttribute="top" secondItem="5am-OL-wCH" secondAttribute="bottom" id="weY-k3-mQh"/>
+                            <constraint firstItem="5am-OL-wCH" firstAttribute="leading" secondItem="dio-6l-25i" secondAttribute="leadingMargin" constant="-16" id="xR8-gP-M8x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4vU-nT-yZZ" secondAttribute="trailing" constant="-16" id="xXA-G5-MRF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r17-yu-3WO">
