@@ -54,7 +54,6 @@
 
 - (IBAction)doneButton:(id)sender
 {
-	[self.locationManager stopUpdatingLocation];
 	[self performSegueWithIdentifier:@"doneRunningSegue" sender:self];
 }
 
@@ -97,6 +96,7 @@
 #pragma mark Segue method
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+	[self.locationManager stopUpdatingLocation];
 	FinishedRunViewController* controller = [segue destinationViewController];
 	controller.metersRan = self.distanceTraveled;
 }
